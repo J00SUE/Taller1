@@ -151,7 +151,26 @@ class Coronarios:
         self.__diametro = 0 
         self.__material = ""
 
+    #setters
+
+    def verlongitud(self):
+        return self.__longitud
     
+    def verdiametro(self):
+        return self.__diametro
+    def vermaterial(self):
+        return self.__material
+
+    #getters    
+
+    def asignar_longitud(self,longitud):
+        self.__longitud = longitud
+
+    def asignar_diametro(self,diametro):
+        self.__diametro = diametro 
+
+    def asignar_material(self, material):
+        self.__material = material
         
 class Dentales:
     def __init__(self):
