@@ -1,46 +1,48 @@
 class persona:
     def __init__(self):
-        self.nombre = ""
-        self.edad = ""
+        self.__nombre = ""
+        self.__cedula = 0 
+        self.__edad = ""
+        self.__genero = ""
         
 class paciente:
     def __init__(self):
-        self.eps = ""
-        self.operacion = ""
+        self.__eps = ""
+        self.__operacion = ""
 
 class medico:
     def __init__(self):
-        self.especialidad = ""   
+        self.__especialidad = ""   
 
 
 class implantes:
     def __init__(self):
-        self.implantes = ""
+        self.__implantes = ""
 
 class Cadera:
     def __init__(self):
-        self.cadera = " "
-        self.material = ""
-        self.fijacion = ""
-        self.tamaño = 0
+        self.__cadera = " "
+        self.__material = ""
+        self.__fijacion = ""
+        self.__tamaño = 0
 
     #setters
     #getters
 
 class Marcapasos:
     def __init__(self):
-        self.electrodos = 0
-        self.alambrico = ""
-        self.estimulacion = ""
+        self.__electrodos = 0
+        self.__alambrico = ""
+        self.__estimulacion = ""
 
     #setters
     #getters
 
 class Coronarios:
     def __init__(self):
-        self.longitud = 0 
-        self.diametro = 0 
-        self.material = ""
+        self.__longitud = 0 
+        self.__diametro = 0 
+        self.__material = ""
 
 
     #setters
@@ -48,31 +50,31 @@ class Coronarios:
         
 class Dentales:
     def __init__(self):
-        self.forma = ""
-        self.fijacion = ""
-        self.material = ""
+        self.__forma = ""
+        self.__fijacion = ""
+        self.__material = ""
 
     #setters
     #getters
 
 class Rodilla:
     def __init__(self):
-        self.material = ""
-        self.fijacion = ""
-        self.tamaño = 0
+        self.__material = ""
+        self.__fijacion = ""
+        self.__tamaño = 0
 
     #setters
     #getters
 
 class Sistema:
     def __init__(self):
-        self.paciente = {}
-        self.medico = {}
-        self.biblio_cadera = {}
-        self.biblio_marca = {}
-        self.biblio_coronario = {}
-        self.biblio_dentales = {}
-        self.biblio_rodilla = {}
+        self.__paciente = {}
+        self.__medico = {}
+        self.__biblio_cadera = {}
+        self.__biblio_marca = {}
+        self.__biblio_coronario = {}
+        self.__biblio_dentales = {}
+        self.__biblio_rodilla = {}
 
     #setters
     #getters
