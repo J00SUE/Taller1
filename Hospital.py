@@ -69,12 +69,24 @@ class medico:
         #getters
 
     def asignar_espe(self,espe):
-        self.asignar_espe = espe
+        self.__especialidad = espe
 
 
 class implantes:
     def __init__(self):
         self.__implantes = ""
+
+        #setters 
+
+    def verimplantes(self):
+        return self.__implantes
+
+
+        #getters
+
+    def asignar_implantes(self,implantes):
+        self.__implantes = implantes
+    
 
 class Cadera:
     def __init__(self):
@@ -84,7 +96,27 @@ class Cadera:
         self.__tamaño = 0
 
     #setters
-    #getters
+
+    def vermaterial(self):
+        return self.__material
+    
+    def verfijacion(self):
+        return self.__fijacion
+    
+    def vertamaño(self):
+        return self.__tamaño
+
+    #getters    
+
+    def asignar_material(self,material):
+        self.__material = material
+
+    def asignar_fijacion(self,fijacion):
+        self.__fijacion = fijacion 
+
+    def asignar_tamaño(self,tamaño):
+        self.__tamaño = tamaño
+    
 
 class Marcapasos:
     def __init__(self):
@@ -93,7 +125,25 @@ class Marcapasos:
         self.__estimulacion = ""
 
     #setters
-    #getters
+
+    def verelectrodos(self):
+        return self.__electrodos
+    
+    def veralambrico(self):
+        return self.__alambrico
+    def verestimulacion(self):
+        return self.__estimulacion
+
+    #getters    
+
+    def asignar_electrodos(self,electrodos):
+        self.__electrodos = electrodos
+
+    def asignar_alambrico(self,alambrico):
+        self.__alambrico = alambrico 
+
+    def asignar_estimulacion(self,estimulacion):
+        self.__estimulacion = estimulacion
 
 class Coronarios:
     def __init__(self):
@@ -101,9 +151,7 @@ class Coronarios:
         self.__diametro = 0 
         self.__material = ""
 
-
-    #setters
-    #getters
+    
         
 class Dentales:
     def __init__(self):
