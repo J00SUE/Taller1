@@ -40,6 +40,22 @@ class paciente:
         self.__eps = ""
         self.__operacion = ""
 
+    #setters
+        
+    def vereps(self):
+        return self.__eps
+    
+    def verop(self):
+        return self.__operacion
+    
+    #getters
+
+    def asignareps(self,eps):
+        self.__eps = eps 
+    
+    def asignarop(self,op):
+        self.asignarop = op
+
 class medico:
     def __init__(self):
         self.__especialidad = ""   
