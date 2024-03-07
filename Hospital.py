@@ -257,7 +257,7 @@ class Sistema:
     def verNumeroPacientes(self):
         return len(self.__dict_paciente)
     
-     def ingresarPaciente(self, cedula, paciente):
+    def ingresarPaciente(self, cedula, paciente):
         self.__dict_paciente[cedula] = paciente
 
     #Delete
