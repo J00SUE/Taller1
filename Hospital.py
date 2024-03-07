@@ -188,6 +188,33 @@ class Rodilla:
         self.__tamaño = 0
 
     #setters
+
+    def verfijacion(self):
+        return self.__fijacion
+    
+    def vertamaño(self):
+        return self.__tamaño
+    def vermaterial(self):
+        return self.__material
+
+    #getters    
+
+    def asignar_fijacion(self,fijacion):
+        self.__fijacion = fijacion
+
+    def asignar_tamaño(self,tamaño):
+        self.__tamaño = tamaño 
+
+    def asignar_material(self, material):
+        self.__material = material
+        
+class Dentales:
+    def __init__(self):
+        self.__forma = ""
+        self.__fijacion = ""
+        self.__material = ""
+
+    #setters
     #getters
 
 class Sistema:
