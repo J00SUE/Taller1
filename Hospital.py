@@ -215,17 +215,57 @@ class Dentales:
         self.__material = ""
 
     #setters
-    #getters
+
+    def verfijacion(self):
+        return self.__fijacion
+    
+    def verforma(self):
+        return self.__forma
+    def vermaterial(self):
+        return self.__material
+
+    #getters    
+
+    def asignar_fijacion(self,fijacion):
+        self.__fijacion = fijacion
+
+    def asignar_forma(self,forma):
+        self.__forma = forma 
+
+    def asignar_material(self, material):
+        self.__material = material
 
 class Sistema:
     def __init__(self):
-        self.__paciente = {}
+        self.__dict_paciente = {}
         self.__medico = {}
-        self.__biblio_cadera = {}
-        self.__biblio_marca = {}
-        self.__biblio_coronario = {}
-        self.__biblio_dentales = {}
-        self.__biblio_rodilla = {}
+        self.__dict_cadera = {}
+        self.__dict_marca = {}
+        self.__dict_coronario = {}
+        self.__dict_dentales = {}
+        self.__dict_rodilla = {}
 
     #setters
-    #getters
+        
+    def verificarExiste(self,cedula):
+        for p in self.__dict_paciente:
+            if cedula == p.vercedula():
+                return True
+        #solo luego de haber recorrido todo el ciclo se retorna False
+        return False
+    
+    def verNumeroPacientes(self):
+        return len(self.__dict_paciente)
+    
+     def ingresarPaciente(self, cedula, paciente):
+        self.__dict_paciente[cedula] = paciente
+
+    #Delete
+
+    def eliminarPaciente(self, cedula):
+        for pac in self.__dict_paciente:
+            if cedula == pac.vercedula():
+                self.__dict_paciente.pop(pac)  
+                return True  #eliminado con exito
+        return False
+   
