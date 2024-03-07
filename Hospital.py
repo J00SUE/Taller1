@@ -50,15 +50,26 @@ class paciente:
     
     #getters
 
-    def asignareps(self,eps):
+    def asignar_eps(self,eps):
         self.__eps = eps 
     
-    def asignarop(self,op):
+    def asignar_op(self,op):
         self.asignarop = op
 
 class medico:
     def __init__(self):
-        self.__especialidad = ""   
+        self.__especialidad = ""  
+
+        #setters 
+
+    def verespe(self):
+        return self.__especialidad
+
+
+        #getters
+
+    def asignar_espe(self,espe):
+        self.asignar_espe = espe
 
 
 class implantes:
